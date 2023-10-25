@@ -26,7 +26,8 @@ const RelatedProducts = () => {
       olympiad: olympiad,
     },
   });
-  const handleCreateNewOrder = () => {
+  const handleCreateNewOrder = (e) => {
+    e.preventDefault();
     createNewOrder(dataOrder);
     
     alert(
